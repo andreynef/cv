@@ -1,0 +1,15 @@
+{
+  "name": "cv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "nuxt": "^3.2.2",
+    "vue": "^3.2.47"
+  }
+}

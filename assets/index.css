@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+@font-face {
+    font-family: Consolas;
+    src: url('./fonts/consolas.ttf');
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+body *{
+    font-family: 'Roboto',Consolas,Arial,sans-serif;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*text-align: center;*/
+    color: #2c3e50;
+    /*margin-top: 60px;*/
+}
+ul,li {
+    list-style: none;
+}
+a, label, input, textarea, button{
+    -webkit-tap-highlight-color: transparent;/*Устанавливает цвет выделения активного элемента при тапе на нем (a, label). По умолчанию это серый цвет.*/
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h2, h3, h4 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 18px;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 7px;
+    /*border:1px solid rgba(255, 255, 255, 0.2);*/
+    box-shadow: 0 0 15px rgba(0,0,0,0.95);
+    /*color: rgba(255, 255, 255, 0.8);*/
+}
+.pr{
+    position: relative;
+}
+.p0{
+    padding: 0;
+}
+.p5{
+    padding: 5px;
+}
+.pl5{
+    padding-left: 5px;
+}
+.p10{
+    padding: 10px;
+}
+.p15{
+    padding: 15px;
+}
+.p20{
+    padding: 20px;
+}
+.p30{
+    padding: 30px;
+}
+.m0{
+    margin: 0;
+}
+.m5{
+    margin: 5px;
+}
+.m10{
+    margin: 10px;
+}
+.mr5{
+    margin-right: 5px;
+}
+.ml5{
+    margin-left: 5px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.ml10{
+    margin-left:10px;
+}
+.ml15{
+    margin-left: 15px;
+}
+.mr15{
+    margin-right: 15px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mb5{
+    margin-bottom: 5px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.m20{
+    margin: 20px;
+}
+.test{
+    color:green;
+}
+.hover:hover{
+    cursor:pointer;
+}
+.fc {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.ffc {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+.fz8{
+    font-size: 8px!important;
+}
+.fz10{
+    font-size: 10px!important;
+}
+.fz12{
+    font-size: 12px!important;
+}
+.fz14{
+    font-size: 14px!important;
+}
+.fz16{
+    font-size: 16px!important;
+}
+.fz18{
+    font-size: 18px!important;
+}
+.fz20{
+    font-size: 20px!important;
+}
+.dropping-enter-active {
+    animation: dropping .3s;
+}
+.dropping-leave-to {
+    animation: dropping .3s reverse;
+}
+@keyframes dropping {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active до версии 2.1.8 */ {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.hideDesk{
+    display: none;
+}
+.hideMob{
+    display: unset;
+}
+
+@media only screen and (max-width: 850px) {
+    .hideDesk{
+        display: unset;
+    }
+    .hideMob{
+        display: none;
+    }
+}
+
+
+
